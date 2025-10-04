@@ -1,19 +1,19 @@
-## 🛒 E-Commerce Dataset – EDA Project
+# 🛒 E-Commerce Dataset – EDA Project
 
-# 📌 Project Overview
+## 📌 Project Overview
 
 This project explores and analyzes the E-Commerce Dataset (Kaggle) using Python.
 The goal is to perform data cleaning, feature engineering, and exploratory data analysis (EDA) to uncover insights about sales trends, product performance, and customer behavior.
 
-# 📂 Dataset Details
+## 📂 Dataset Details
 
 Source: Kaggle – E - Commerce Data (Link - https://www.kaggle.com/datasets/carrie1/ecommerce-data )
 
-# Description:
+## Description:
 
 The dataset contains transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based online retail company.
 
-# Key Features:
+## Key Features:
 
 InvoiceNo – Invoice number (unique ID for each transaction)
 
@@ -31,9 +31,9 @@ CustomerID – Unique identifier for each customer
 
 Country – Customer’s country
 
-# ⚙️ Steps Performed
+## ⚙️ Steps Performed
 
-# 🔹 Data Cleaning
+## 🔹 Data Cleaning
 
 Checked for missing values (df.isnull().sum())
 
@@ -43,7 +43,7 @@ Dropped rows with missing CustomerID values
 
 Identified and removed transactions with negative quantities or unit prices
 
-# 🔹 Feature Engineering
+## 🔹 Feature Engineering
 
 Created a new feature:
 
@@ -51,7 +51,7 @@ Revenue = Quantity × UnitPrice
 
 Extracted Year, Month, Day, and DayOfWeek from InvoiceDate
 
-# 🔹 Exploratory Data Analysis
+## 🔹 Exploratory Data Analysis
 
 Summary statistics with df.describe()
 
@@ -63,7 +63,7 @@ Boxplot of Quantity to detect outliers
 
 Dot product check (Quantity × UnitPrice) for total revenue consistency
 
-# 📊 Visualizations & Insights
+## 📊 Visualizations & Insights
 
 📈 Revenue Over Time – A line plot showing how total revenue changes with time
 
@@ -81,7 +81,7 @@ Dot product check (Quantity × UnitPrice) for total revenue consistency
 
 <img width="597" height="455" alt="image" src="https://github.com/user-attachments/assets/08109e50-eec7-4564-8b4d-4e87e568cef0" />
 
-🧾 Invoices Per Year – Counted total number of invoices issued each year
+🧾 Invoices Per Year – A pie chart showing total number of invoices issued each year
 
 <img width="419" height="427" alt="image" src="https://github.com/user-attachments/assets/3b305f9a-5fc3-48c0-8c61-988590e9cfd5" />
 
@@ -89,4 +89,20 @@ Dot product check (Quantity × UnitPrice) for total revenue consistency
 
 <img width="989" height="690" alt="image" src="https://github.com/user-attachments/assets/f7da429a-e96a-45ff-8248-de81dcde6630" />
 
+## 📌 Tech Stack
 
+Language: Python 🐍
+
+Libraries: Pandas, NumPy, Matplotlib
+
+## ✅ Results & Findings
+
+Dataset had missing CustomerID values → cleaned.
+
+Negative Quantity and UnitPrice indicated returns/cancellations → removed.
+
+Seasonal patterns detected in monthly revenue.
+
+Outliers in Quantity identified through boxplots.
+
+Revenue feature successfully engineered for deeper analysis.

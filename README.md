@@ -1,19 +1,19 @@
-##🛒 E-Commerce Dataset – EDA Project
+## 🛒 E-Commerce Dataset – EDA Project
 
-#📌 Project Overview
+# 📌 Project Overview
 
 This project explores and analyzes the E-Commerce Dataset (Kaggle) using Python.
 The goal is to perform data cleaning, feature engineering, and exploratory data analysis (EDA) to uncover insights about sales trends, product performance, and customer behavior.
 
-#📂 Dataset Details
+# 📂 Dataset Details
 
 Source: Kaggle – E - Commerce Data (Link - https://www.kaggle.com/datasets/carrie1/ecommerce-data )
 
-#Description:
+# Description:
 
 The dataset contains transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based online retail company.
 
-#Key Features:
+# Key Features:
 
 InvoiceNo – Invoice number (unique ID for each transaction)
 
@@ -31,9 +31,9 @@ CustomerID – Unique identifier for each customer
 
 Country – Customer’s country
 
-#⚙️ Steps Performed
+# ⚙️ Steps Performed
 
-#🔹 Data Cleaning
+# 🔹 Data Cleaning
 
 Checked for missing values (df.isnull().sum())
 
@@ -43,7 +43,7 @@ Dropped rows with missing CustomerID values
 
 Identified and removed transactions with negative quantities or unit prices
 
-#🔹 Feature Engineering
+# 🔹 Feature Engineering
 
 Created a new feature:
 
@@ -51,7 +51,7 @@ Revenue = Quantity × UnitPrice
 
 Extracted Year, Month, Day, and DayOfWeek from InvoiceDate
 
-#🔹 Exploratory Data Analysis
+# 🔹 Exploratory Data Analysis
 
 Summary statistics with df.describe()
 
@@ -63,7 +63,7 @@ Boxplot of Quantity to detect outliers
 
 Dot product check (Quantity × UnitPrice) for total revenue consistency
 
-#📊 Visualizations & Insights
+# 📊 Visualizations & Insights
 
 📈 Revenue Over Time – A line plot showing how total revenue changes with time
 

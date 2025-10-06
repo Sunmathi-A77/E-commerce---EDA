@@ -51,6 +51,38 @@ Revenue = Quantity × UnitPrice
 
 Extracted Year, Month, Day, and DayOfWeek from InvoiceDate
 
+## 🔹 Identified skewness for each column based on the shape of the distribution
+
+Distribution plots - <img width="1989" height="490" alt="image" src="https://github.com/user-attachments/assets/ff20f846-7e4b-4dc0-921d-2b078a5471b8" />
+
+1️⃣ Quantity
+
+Right-skewed, majority of transactions have small quantities, a few with very high quantities
+
+2️⃣ UnitPrice
+
+Right-skewed, most prices are low, few very expensive items
+
+3️⃣ CustomerID
+
+Right-skewed, few customers make many purchases, most make only a few
+
+4️⃣ Revenue
+
+Right-skewed, most revenues are low, few transactions generate very high revenue
+
+✅ Summary: All numeric columns show positive (right) skewness, meaning long tail on the higher values.
+
+## 🔹 Log Transformation to Reduce Skewness
+
+To reduce the right skew in numeric columns, logarithmic transformation (log1p) was applied to Quantity, UnitPrice, CustomerID, and Revenue.
+
+New columns were created with the _log suffix (e.g., Quantity_log)
+
+Distributions after log transformation are closer to normal, making data more suitable for analysis and modeling
+
+Plot after transformation - <img width="1489" height="390" alt="image" src="https://github.com/user-attachments/assets/ae3d8e1f-42b8-4ea8-9668-8f84155f102f" />
+
 ## 🔹 Exploratory Data Analysis
 
 Summary statistics with df.describe()

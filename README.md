@@ -83,6 +83,8 @@ Distributions after log transformation are closer to normal, making data more su
 
 Plot after transformation - <img width="1489" height="390" alt="image" src="https://github.com/user-attachments/assets/ae3d8e1f-42b8-4ea8-9668-8f84155f102f" />
 
+Used heatmap to show the correlation of numeric columns
+
 ## 🔹 Exploratory Data Analysis
 
 Summary statistics with df.describe()
@@ -138,3 +140,5 @@ Seasonal patterns detected in monthly revenue.
 Outliers in Quantity identified through boxplots.
 
 Revenue feature successfully engineered for deeper analysis.
+
+Analyzing Top Revenue Generating Items per Month - <img width="1191" height="590" alt="image" src="https://github.com/user-attachments/assets/40556b5b-9015-477f-b9a8-86de28b8e7d2" />
